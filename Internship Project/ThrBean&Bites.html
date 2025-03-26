@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BEAN & BITES         </title>
+    <link rel="stylesheet" href="styles.css">
+    <head>
+        <title>My Website</title>
+        <link rel="icon" type="image/png" href="logoforweb.png"> 
+    </head>
+    <style>
+        body {
+            font-family: 'exo',san-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d3bc90;
+            text-align: center;
+        }
+        header {
+            background-image: url('ground.jpg'); /* Replace with your image path */
+            background-size: cover; /* Ensures the image covers the entire header */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents repeating */
+            height: 300px; /* Adjust height as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 1.5rem;
+}
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: rgb(236, 236, 236);
+            text-decoration: none;
+        }
+        #basket {
+            background: #543016;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        section {
+            padding: 10px;
+        }
+        #menu ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #menu ul li {
+            background-color: #fff;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+        }
+        .add-to-basket {
+            background-color: #6f4e37;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .description {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 5px;
+        }
+        #branches {
+            background-color: #6f4e37;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        #offers-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #offers ul li {
+            background-color: #fff;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            width: 30%;
+        }
+
+        .menu-img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #666;
+        }
+        strong {
+            font-size: 18px;
+            color: #222;
+        }
+
+        #reviews {
+    background-color: #d3bc90;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#reviews-list {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#reviews-list p {
+    background: #ebeae7;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #6f4e37;
+    color: white;
+    border: black;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1> THE BEAN & BITES </h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+         <div id="basket">🛒 Basket (<span id="basket-count">0</span>)</div>
+    </header>
+    
+    <section id="HOME">
+        <h2> WELCOME TO THE BEANS & BITES ! </h2>
+        <p> Step into our warm and welcoming cafe, where every sip and bite feels like a hug.</p>
+        <p>  From rich aroma to decacdent treats, we're brewing up heaven for coffee lovers and foodies alike.</p>
+    </section>
+    
+    <section id="offers">
+        <h2>Summer Coolers & Offers</h2>
+        <ul id="offers-list">
+            <li>
+                <img src="iced-coffee.jpg" alt="Iced Coffee" class="menu-img">
+                <strong>Iced Coffee - 200/-</strong>
+                <p class='description'>Refreshing chilled coffee for hot days.</p>
+            </li>
+            <li>
+                <img src="mango-smoothie.jpg" alt="Mango Smoothie" class="menu-img">
+                <strong>Mango Smoothie - 150/-</strong>
+                <p class='description'>Tropical delight with fresh mangoes.</p>
+            </li>
+            <li>
+                <img src="lemon.jpg" alt="Lemonade" class="menu-img">
+                <strong>Lemonade - 100/-</strong>
+                <p class='description'>Fresh and zesty summer cooler.</p>
+            </li>
+            <li>
+                <img src="moj.jpg" alt="Mojito" class="menu-img">
+                <strong>Mojito- 140/- </strong>
+                <p class='description'>A refreshing Cuban cocktail </p>
+            </li>
+            <li>
+                <img src="coconut.jpg" alt="tender Coconut" class="menu-img">
+                <strong>Tender Coconut- 90/-</strong>
+                <p class='description'>Hydrating electrolyte to cool down the body</p>
+            </li>
+            <li>
+                <img src="ice.jpg" alt="Icegola" class="menu-img">
+                <strong>Ice gola - 55/- </strong>
+                <p class='description'>Crushed ice molded and topped with flavors </p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <ul id="menu-list"></ul>
+          <ul>
+            <li>
+                <img src="iced-coffee.jpg" alt="Iced Coffee" class="menu-img">
+                <div>
+                    <strong>Iced Coffee - 170/-</strong>
+                    <p class='description'>Refreshing chilled coffee for hot days.</p>
+                </div>
+            </li>
+            <li>
+                <img src="americano.jpg" alt="Mango Smoothie" class="menu-img">
+                <div>
+                    <strong>Americano - 90/-</strong>
+                    <p class='description'>Diluted shot of espresso.</p>
+                </div>
+            </li>
+            <li>
+                <img src="mooo.jpg" alt="Lemonade" class="menu-img">
+                <div>
+                    <strong> Mocha - 170/-</strong>
+                    <p class='description'>Caffeine with a hint of chocolate.</p>
+                </div>
+            </li>
+            <li>
+                <img src="hot-cocoa.jpg" alt="Mojito" class="menu-img">
+                <div>
+                    <strong> Hot Chocolate - 150/-</strong>
+                    <p class='description'> An instant mood booster.  </p>
+                </div>
+            </li>
+            <li>
+                <img src="caramel.jpg" alt="Tender Coconut" class="menu-img">
+                <div>
+                    <strong>Caramel Latte - 100/-</strong>
+                    <p class='description'> Delightful blend of espresso, steamed milk, and caramel syrup .</p>
+                </div>
+            </li>
+            <li>
+                <img src="cappuccino.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong> Cappuccino - 130/-</strong>
+                    <p class='description'>The perfect balance of espresso, steamed milk and foam.</p>
+                </div>
+            </li>
+            <li>
+                <img src="protein.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong> Protein Smoothie -170/- </strong>
+                    <p class='description'> Banana and Peanut smoothie (Can be Customized).</p>
+                </div>
+            </li>
+            <li>
+                <img src="strawshake.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong>Strawberry Milkshake - 130/-</strong>
+                    <p class='description'> Fresh strawberries and ice cream for the season. </p>
+                </div>
+            </li>
+            <li>
+                <img src="candcshake.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong>Cookies & Cream Milkshake - 155/-</strong>
+                    <p class='description'> crunchy and yummy cookies and cream shakes .</p>
+                </div>
+            </li>
+            <li>
+                <img src="chocoshake.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong>Chocolate Milkshake - 150/-</strong>
+                    <p class='description'> Decadent and rich Chocolate chucky shake (With Customized topping).</p>
+                </div>
+            </li>
+            <li>
+                <img src="brow.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong>Double Chocolate Brownie - 100/- (Without icecream)</strong>
+                    <p class='description'>Decadent gooey brownies served hot.</p>
+                </div>
+            </li>
+            <li>
+                <img src="blondie.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong>Blondie -120/-</strong>
+                    <p class='description'> White chocolate gooey brownies with chunky choco chips.</p>
+                </div>
+            </li>
+            <li>
+                <img src="cheese.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong> Vegan Cheesecakes- Starting at 150/- (May change depending on the flavours)</strong>
+                    <p class='description'> Yummy vegan cheesecakes of various flavours </p>
+                </div>
+            </li>
+            <li>
+                <img src="waffle.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong>Waffles - Starting at 150/- (May change depending on flavours and the toppings)</strong>
+                    <p class='description'> Perfect crunchy waffles with flavours and toppings of choice.</p>
+                </div>
+            </li>
+            <li>
+                <img src="sand.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong>Sandwich - 125/-</strong>
+                    <p class='description'> Veggie sandwich with customizable fillings</p>
+                </div>
+            </li>
+            <li>
+                <img src="glazeddont.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong>Glazed Donut - 75/-</strong>
+                    <p class='description'> Freshly in-house baked donuts.</p>
+                </div>
+            </li>
+            <li>
+                <img src="chocdonut.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong>Choco Donut - 80/-</strong>
+                    <p class='description'> Richly choco-filled donuts.</p>
+                </div>
+            </li>
+            <li>
+                <img src="flvdonut.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong> Flavoured Donuts - 85/-</strong>
+                    <p class='description'>Freshly made in-house donut in various flavors(option available only in store).</p>
+                </div>
+            </li>
+            <li>
+                <img src="classicmuffin.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong>Classic Muffin - 45/-</strong>
+                    <p class='description'>Classic plain muffin with our creamy icing.</p>
+                </div>
+            </li>
+            <li>
+                <img src="veganmuffin.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong> Vegan Blueberry Muffin- 55/-</strong>
+                    <p class='description'>Crushed ice molded and topped with flavors.</p>
+                </div>
+            </li>
+            <li>
+                <img src="cake.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong>Cakesicles - 65/-</strong>
+                    <p class='description'> Fudgy cake coated with melted chocolate.</p>
+                </div>
+            </li>
+            <li>
+                <img src="nice.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong>Nice-Cream- 55/-</strong>
+                    <p class='description'>Healthier versions of Ice- creams.</p>
+                </div>
+            </li>
+            <li>
+                <img src="sbowl.jpg" alt="Ice Gola" class="menu-img">
+                <div>
+                    <strong>Customizable Smoothie Bowls - Starting from 170/-  ( May change according to the toppings and ingredients) </strong>
+                    <p class='description'> Yummy refreshing bowls.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <div id="reviews-list">
+            <p><strong>Ravi:</strong> " Had an amazing experience in having my coffe in an calming ambience " </p>
+            <p><strong> Priya :</strong> " My go-to cafe ! Definitely recommend " </p>
+            <p><strong> Adithya:</strong> " Kuddos to this beautiful cafe & the amazing foods ! " </p>
+            <p><strong> John:</strong> "Service is really great. Highly recommend to try their Blondie. " </p>
+        </div>
+        
+        <h3> Hey there! Spend a moment to share your valuable feedback </h3>
+        <input type="text" id="reviewer-name" placeholder="Your Lovely name here ......">
+        <textarea id="review-text" placeholder="What do you think about The Beans & Bites ? If you have any suggestions we would love to hear them ! "></textarea>
+        <button id="submit">Submit</button>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@thebeansandbites.com</p>
+        <p>Instagram : The_beans_&_bites_Chennai</p>
+        <p>Phone: +123 045  6789</p>
+        <p> WE PROVIDE SPECIAL OFFERS ON BULK ORDERS AND PRE-ORDERS </p>
+        <p> DON'T MISS THEM !</p>
+    </section>
+    
+    <section id="branches">
+        <h2>Our Branches</h2>
+        <p>📍 Virugambakkam </p>
+        <p>📍 Anna nagar </p>
+        <p>📍 K.K.Nagar </p>
+        <p>📍 Nungambakkam </p>
+    </section>
+    
+    <script>
+        
+        
+        document.getElementById("submit-review").addEventListener("click", function () {
+    const name = document.getElementById("reviewer-name").value.trim();
+    const review = document.getElementById("review-text").value.trim();
+    const reviewsList = document.getElementById("reviews-list");
+
+    if (name === "" || review === "") {
+        alert("Please enter your name and review!");
+        return;
+    }
+
+    const newReview = document.createElement("p");
+    newReview.innerHTML = `<strong>${name}:</strong> "${review}"`;
+    reviewsList.appendChild(newReview);
+
+    document.getElementById("reviewer-name").value = "";
+    document.getElementById("review-text").value = "";
+});
+
+    </script>
+</body>
+</html>
